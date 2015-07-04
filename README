@@ -12,8 +12,8 @@ How to Run Project
 2.Download the zip file.
 3.Open a browser
 4.Open Python 2.7.10
-5.Open the three .py files (Entertainment_Center, Media, Fresh Tomatoes)
-6.Navigate to the Entertainment_Center.py file and run it (fn F5 on a mac) or you can select from the toolbar.
+5.Open the Entertainment_Center.py file.
+6.Run the program from the toolbar or keyboard shortcut (fn F5 on a Mac)
 7.The page should appear in your browser: you can watch the trailers by clicking and learn more about the movies by hovering over "Additional Information"
 
 
