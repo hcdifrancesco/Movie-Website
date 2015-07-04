@@ -61,27 +61,23 @@ main_page_head = '''
             text-align: center;
             margin: auto;
         }
-        
-    //Following are the classes I added as part of the hover feature
-    
-         .popupBox {
-            visibility:hidden;
-            opacity:0;        
-            transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+
+ /*Following are the two classes controlling the box that appears upon hovering
+ over "Additional Information*/
+         .popup {
+            visibility:hidden;       
             transition: all 0.4s ease;
-
-
-        }
-        .popupHoverElement:hover > .popupBox {
-            visibility:visible;
-            opacity:1;
-            transition: all 0.3s ease;        
         }
         
-    //Following is the box in which Oscar Wins and Actors appear
-    
+        .popupHover:hover > .popup{
+            visibility:visible;
+            transition: all 0.3s ease;              
+        }
+
+ /*This is the formatting of the popup box that shows up upon hovering*/
+ 
         #theinfobox {
-            background:  #EEEEEE;
+            background: #EEEEEE;
             border: 1.5px solid #000000;
             color: #333333;
             overflow:hidden;
@@ -164,10 +160,10 @@ movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
      <h2>{movie_title}</h2>
-<!-- Hover Over Popups -->
-     <div class="popupHoverElement">
+<!--Hover Elements-->
+     <div class="popupHover">
         <h5>Additional Information</h5>
-            <div id="theinfobox" class="popupBox">
+            <div id="theinfobox" class="popup">
                 <b>Oscar Wins:</b> {movie_oscar_wins} <br>
                 <b>Starring:</b> {movie_actors}
             </div>

@@ -56,22 +56,23 @@
             text-align: center;
             margin: auto;
         }
-         .popupBox {
-            visibility:hidden;
-            opacity:0;        
-            transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+
+ /*Following are the two classes controlling the box that appears upon hovering
+ over "Additional Information*/
+         .popup {
+            visibility:hidden;       
             transition: all 0.4s ease;
-
-
         }
-        .popupHoverElement:hover > .popupBox {
+        
+        .popupHover:hover > .popup{
             visibility:visible;
-            opacity:1;
-            transition: all 0.3s ease;        
-        }       
+            transition: all 0.3s ease;              
+        }
 
+ /*This is the formatting of the popup box that shows up upon hovering*/
+ 
         #theinfobox {
-            background:  #EEEEEE;
+            background: #EEEEEE;
             border: 1.5px solid #000000;
             color: #333333;
             overflow:hidden;
@@ -80,10 +81,7 @@
             position: top;
             top: 10px;
         }
-    
-            
-
-        
+           
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -144,78 +142,78 @@
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="2GxSDZc8etg" data-toggle="modal" data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/6/6c/HLposterUSA2.jpg" width="220" height="342">
      <h2>The Hurt Locker</h2>
-<!-- Hover Over Popups -->
-     <div class="popupHoverElement">
-        <h4>Additional Information</h4>
-            <div id="theinfobox" class="popupBox">
-            <b>Oscar Wins:</b> Best Picture, Best Director, Best Original Screenplay, Best Film Editing, Best Sound Mixing, Best Sound Editing <br>
-            <b>Starring:</b> Jeremy Renner
-        </div>
+<!--Hover Elements-->
+     <div class="popupHover">
+        <h5>Additional Information</h5>
+            <div id="theinfobox" class="popup">
+                <b>Oscar Wins:</b> Best Picture, Best Director, Best Original Screenplay, Best Film Editing, Best Sound Mixing, Best Sound Editing <br>
+                <b>Starring:</b> Jeremy Renner
+            </div>
     </div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="KKC3W0awjm0" data-toggle="modal" data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Rain_Man_poster.jpg" width="220" height="342">
      <h2>Rain Man</h2>
-<!-- Hover Over Popups -->
-     <div class="popupHoverElement">
-        <h4>Additional Information</h4>
-            <div id="theinfobox" class="popupBox">
-            <b>Oscar Wins:</b> Best Picture, Best Original Screenplay, Best Director, Best Actor in a Leading Role <br>
-            <b>Starring:</b> Dusting Hoffman and Tom Cruise
-        </div>
+<!--Hover Elements-->
+     <div class="popupHover">
+        <h5>Additional Information</h5>
+            <div id="theinfobox" class="popup">
+                <b>Oscar Wins:</b> Best Picture, Best Original Screenplay, Best Director, Best Actor in a Leading Role <br>
+                <b>Starring:</b> Dusting Hoffman and Tom Cruise
+            </div>
     </div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="aS_d0Ayjw4o" data-toggle="modal" data-target="#trailer">
     <img src="https://s-media-cache-ak0.pinimg.com/originals/57/f3/a2/57f3a2eb9703ceb3700ead00eb4f2c63.jpg" width="220" height="342">
      <h2>A Beautiful Mind</h2>
-<!-- Hover Over Popups -->
-     <div class="popupHoverElement">
-        <h4>Additional Information</h4>
-            <div id="theinfobox" class="popupBox">
-            <b>Oscar Wins:</b> Best Picture, Best Actress in a Supporting Role, Best Director, Best Writing <br>
-            <b>Starring:</b> Russell Crowe and Jennifer Connelly
-        </div>
+<!--Hover Elements-->
+     <div class="popupHover">
+        <h5>Additional Information</h5>
+            <div id="theinfobox" class="popup">
+                <b>Oscar Wins:</b> Best Picture, Best Actress in a Supporting Role, Best Director, Best Writing <br>
+                <b>Starring:</b> Russell Crowe and Jennifer Connelly
+            </div>
     </div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="7nH5iPgNkoY" data-toggle="modal" data-target="#trailer">
     <img src="http://www.gaiahealthblog.com/wordpress1/wp-content/uploads/2015/03/MPW-21346.jpg" width="220" height="342">
      <h2>Lawrence of Arabia</h2>
-<!-- Hover Over Popups -->
-     <div class="popupHoverElement">
-        <h4>Additional Information</h4>
-            <div id="theinfobox" class="popupBox">
-            <b>Oscar Wins:</b> Best Picture, Best Director, Best Cinematography, Best Art Direction, Best Sound, Best Film Editing, Best Original Score <br>
-            <b>Starring:</b> Peter O'toole and Omar Sharif
-        </div>
+<!--Hover Elements-->
+     <div class="popupHover">
+        <h5>Additional Information</h5>
+            <div id="theinfobox" class="popup">
+                <b>Oscar Wins:</b> Best Picture, Best Director, Best Cinematography, Best Art Direction, Best Sound, Best Film Editing, Best Original Score <br>
+                <b>Starring:</b> Peter O'toole and Omar Sharif
+            </div>
     </div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="uJfLoE6hanc" data-toggle="modal" data-target="#trailer">
     <img src="http://www.filmjabber.com/movie-poster-thumbs/birdman-movie-poster-5097.jpg" width="220" height="342">
      <h2>Birdman</h2>
-<!-- Hover Over Popups -->
-     <div class="popupHoverElement">
-        <h4>Additional Information</h4>
-            <div id="theinfobox" class="popupBox">
-            <b>Oscar Wins:</b> Best Picture, Best Director, Best Original Screenplay, Best Achievement in Cinematography <br>
-            <b>Starring:</b> Michael Keaton
-        </div>
+<!--Hover Elements-->
+     <div class="popupHover">
+        <h5>Additional Information</h5>
+            <div id="theinfobox" class="popup">
+                <b>Oscar Wins:</b> Best Picture, Best Director, Best Original Screenplay, Best Achievement in Cinematography <br>
+                <b>Starring:</b> Michael Keaton
+            </div>
     </div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="AIzbwV7on6Q" data-toggle="modal" data-target="#trailer">
     <img src="https://www.movieposter.com/posters/archive/main/110/MPW-55462" width="220" height="342">
      <h2>Slumdog Millionaire</h2>
-<!-- Hover Over Popups -->
-     <div class="popupHoverElement">
-        <h4>Additional Information</h4>
-            <div id="theinfobox" class="popupBox">
-            <b>Oscar Wins:</b> Best Picture, Best Director, Best Adapted Screenplay, Best Achievement in Cinematography, Best Achievement in Film Editing, Best Original Score, Best Original Song, Best Achievement in Sound Mixing <br>
-            <b>Starring:</b> Dev Patel and Freida Pinto
-        </div>
+<!--Hover Elements-->
+     <div class="popupHover">
+        <h5>Additional Information</h5>
+            <div id="theinfobox" class="popup">
+                <b>Oscar Wins:</b> Best Picture, Best Director, Best Adapted Screenplay, Best Achievement in Cinematography, Best Achievement in Film Editing, Best Original Score, Best Original Song, Best Achievement in Sound Mixing <br>
+                <b>Starring:</b> Dev Patel and Freida Pinto
+            </div>
     </div>
 </div>
 
